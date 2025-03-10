@@ -4,18 +4,18 @@ import { motion } from "framer-motion";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere } from "@react-three/drei";
 import { useEffect, useState } from "react";
-import { 
-  Code, 
-  Database, 
-  Cloud, 
-  Monitor, 
-  Github, 
-  Linkedin, 
+import {
+  Code,
+  Database,
+  Cloud,
+  Monitor,
+  Github,
+  Linkedin,
   BookOpen,
   Server,
   Box,
   Terminal,
-  CircleSlash2
+  CircleSlash2,
 } from "lucide-react";
 
 const technologies = [
@@ -26,7 +26,7 @@ const technologies = [
   { name: "Git", icon: Github, color: "text-orange-400" },
   { name: "AWS", icon: Cloud, color: "text-yellow-500" },
   { name: "Docker", icon: Box, color: "text-blue-400" },
-  { name: "Terminal", icon: Terminal, color: "text-green-400" }
+  { name: "Terminal", icon: Terminal, color: "text-green-400" },
 ];
 
 export default function Home() {
@@ -43,7 +43,7 @@ export default function Home() {
       {/* Social Links */}
       <div className="social-links">
         <motion.a
-          href="https://github.com/yourusername"
+          href="https://github.com/sanket"
           target="_blank"
           rel="noopener noreferrer"
           initial={{ opacity: 0, x: 20 }}
@@ -53,7 +53,7 @@ export default function Home() {
           <Github className="w-6 h-6" />
         </motion.a>
         <motion.a
-          href="https://linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/sanket-benade-146b26142/"
           target="_blank"
           rel="noopener noreferrer"
           initial={{ opacity: 0, x: 20 }}
@@ -63,7 +63,7 @@ export default function Home() {
           <Linkedin className="w-6 h-6" />
         </motion.a>
         <motion.a
-          href="https://medium.com/@yourusername"
+          href="https://medium.com/@er.benadesanket"
           target="_blank"
           rel="noopener noreferrer"
           initial={{ opacity: 0, x: 20 }}
@@ -78,7 +78,11 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <Canvas>
-            <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={0.5} />
+            <OrbitControls
+              enableZoom={false}
+              autoRotate
+              autoRotateSpeed={0.5}
+            />
             <ambientLight intensity={0.5} />
             <directionalLight position={[2, 5, 2]} intensity={1} />
             <Sphere args={[1, 100, 200]} scale={2.4}>
@@ -115,7 +119,8 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed"
           >
-            Crafting exceptional digital experiences with modern web technologies
+            Crafting exceptional digital experiences with modern web
+            technologies
           </motion.p>
         </div>
 
@@ -179,19 +184,25 @@ export default function Home() {
             >
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
                 <div>
-                  <h3 className="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors">Senior Software Engineer</h3>
-                  <p className="text-lg text-gray-400">Spring Computing Technologies, Pune</p>
+                  <h3 className="text-2xl font-bold text-white group-hover:text-purple-400 transition-colors">
+                    Senior Software Engineer
+                  </h3>
+                  <p className="text-lg text-gray-400">
+                    Spring Computing Technologies, Pune
+                  </p>
                 </div>
                 <p className="text-gray-500">May 2022 – Aug 2024</p>
               </div>
               <ul className="space-y-4 text-gray-300 mb-8">
                 <li className="flex items-start gap-3">
                   <span className="text-purple-400">•</span>
-                  Architected and implemented scalable web & desktop applications using React.js and Electron.js
+                  Architected and implemented scalable web & desktop
+                  applications using React.js and Electron.js
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-purple-400">•</span>
-                  Led development of MS Teams/Slack plugins, improving team collaboration efficiency by 40%
+                  Led development of MS Teams/Slack plugins, improving team
+                  collaboration efficiency by 40%
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-purple-400">•</span>
@@ -199,10 +210,18 @@ export default function Home() {
                 </li>
               </ul>
               <div className="flex flex-wrap gap-3">
-                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">React.js</span>
-                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">Electron.js</span>
-                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">WebRTC</span>
-                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">Socket.io</span>
+                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">
+                  React.js
+                </span>
+                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">
+                  Electron.js
+                </span>
+                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">
+                  WebRTC
+                </span>
+                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">
+                  Socket.io
+                </span>
               </div>
             </motion.div>
 
@@ -214,30 +233,45 @@ export default function Home() {
             >
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
                 <div>
-                  <h3 className="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">Software Engineer</h3>
-                  <p className="text-lg text-gray-400">Atliq Technologies, Vadodara</p>
+                  <h3 className="text-2xl font-bold text-white group-hover:text-blue-400 transition-colors">
+                    Software Engineer
+                  </h3>
+                  <p className="text-lg text-gray-400">
+                    Atliq Technologies, Vadodara
+                  </p>
                 </div>
                 <p className="text-gray-500">Oct 2021 – May 2022</p>
               </div>
               <ul className="space-y-4 text-gray-300 mb-8">
                 <li className="flex items-start gap-3">
                   <span className="text-blue-400">•</span>
-                  Developed responsive web applications with Next.js, ensuring optimal mobile experience
+                  Developed responsive web applications with Next.js, ensuring
+                  optimal mobile experience
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-blue-400">•</span>
-                  Integrated Stripe payment system, processing over 1000+ transactions monthly
+                  Integrated Stripe payment system, processing over 1000+
+                  transactions monthly
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-blue-400">•</span>
-                  Implemented TypeScript for enhanced code reliability and maintainability
+                  Implemented TypeScript for enhanced code reliability and
+                  maintainability
                 </li>
               </ul>
               <div className="flex flex-wrap gap-3">
-                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">Next.js</span>
-                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">TypeScript</span>
-                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">Stripe</span>
-                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">Node.js</span>
+                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">
+                  Next.js
+                </span>
+                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">
+                  TypeScript
+                </span>
+                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">
+                  Stripe
+                </span>
+                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">
+                  Node.js
+                </span>
               </div>
             </motion.div>
 
@@ -249,7 +283,9 @@ export default function Home() {
             >
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
                 <div>
-                  <h3 className="text-2xl font-bold text-white group-hover:text-green-400 transition-colors">Jr. DevOps Engineer</h3>
+                  <h3 className="text-2xl font-bold text-white group-hover:text-green-400 transition-colors">
+                    Jr. DevOps Engineer
+                  </h3>
                   <p className="text-lg text-gray-400">Aventri, Pune</p>
                 </div>
                 <p className="text-gray-500">Nov 2020 – Aug 2021</p>
@@ -269,10 +305,18 @@ export default function Home() {
                 </li>
               </ul>
               <div className="flex flex-wrap gap-3">
-                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">AWS</span>
-                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">Jenkins</span>
-                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">Puppet</span>
-                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">Apache</span>
+                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">
+                  AWS
+                </span>
+                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">
+                  Jenkins
+                </span>
+                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">
+                  Puppet
+                </span>
+                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">
+                  Apache
+                </span>
               </div>
             </motion.div>
 
@@ -284,8 +328,12 @@ export default function Home() {
             >
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
                 <div>
-                  <h3 className="text-2xl font-bold text-white group-hover:text-yellow-400 transition-colors">Software Developer</h3>
-                  <p className="text-lg text-gray-400">Ghodawat Softech, Kolhapur</p>
+                  <h3 className="text-2xl font-bold text-white group-hover:text-yellow-400 transition-colors">
+                    Software Developer
+                  </h3>
+                  <p className="text-lg text-gray-400">
+                    Ghodawat Softech, Kolhapur
+                  </p>
                 </div>
                 <p className="text-gray-500">May 2020 – October 2020</p>
               </div>
@@ -304,9 +352,15 @@ export default function Home() {
                 </li>
               </ul>
               <div className="flex flex-wrap gap-3">
-                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">React.js</span>
-                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">Node.js</span>
-                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">Redux</span>
+                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">
+                  React.js
+                </span>
+                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">
+                  Node.js
+                </span>
+                <span className="px-3 py-1 text-sm bg-white/10 rounded-full">
+                  Redux
+                </span>
               </div>
             </motion.div>
           </div>
