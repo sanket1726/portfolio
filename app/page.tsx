@@ -43,7 +43,7 @@ export default function Home() {
       {/* Social Links */}
       <div className="social-links">
         <motion.a
-          href="https://github.com/sanket"
+          href="https://github.com/sanket1726"
           target="_blank"
           rel="noopener noreferrer"
           initial={{ opacity: 0, x: 20 }}
